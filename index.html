@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitor S. — Criação de conteúdo e estratégia digital</title>
+<meta name="description" content="Estratégia, roteiro, edição e criatividade para transformar atenção em crescimento.">
+<meta property="og:title" content="Vitor S. — Criação de conteúdo e estratégia digital">
+<meta property="og:description" content="Estratégia, roteiro, edição e criatividade para transformar atenção em crescimento.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#050505">
+<link rel="icon" href="data:,">
+<script>document.documentElement.classList.add('js-reveal');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..800;1,62..125,300..700&family=Instrument+Serif:ital@0;1&display=swap">
+  <style>
+    :root{
+      --bg:#050505;
+      --panel:#0A0A0A;
+      --frame:#0C0C0C;
+      --ink:#EDEBE6;
+      --ink-2:#B4B1AA;
+      --dim:#8E8B84;
+      --line:rgba(237,235,230,.11);
+      --line-2:rgba(237,235,230,.22);
+      --accent:#E8502A;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;background:var(--bg);color:var(--ink);
+      font-family:Archivo,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-variation-settings:"wdth" 100;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    ::selection{background:var(--accent);color:#050505}
+    a{color:var(--ink);text-decoration:none;transition:color .35s ease}
+    a:hover{color:var(--accent)}
+    p{margin:0}
+    h1,h2,h3{margin:0;font-weight:500}
+
+    .wrap{max-width:1440px;margin:0 auto;padding:0 88px}
+    .sec{padding:168px 0;scroll-margin-top:90px}
+
+    /* micro typography */
+    .lbl{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);font-weight:500;line-height:1.4}
+    .lbl-ink{color:var(--ink-2)}
+    .lbl-acc{color:var(--accent)}
+
+    /* nav */
+    .nav{position:sticky;top:0;z-index:60;background:rgba(5,5,5,.78);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav-in{max-width:1440px;margin:0 auto;padding:0 88px;height:76px;display:flex;align-items:center;justify-content:space-between;gap:40px}
+    .wordmark{font-size:16px;letter-spacing:.12em;font-weight:600;color:var(--ink)}
+    .wordmark:hover{color:var(--ink)}
+    .nav-links{display:flex;gap:34px}
+    .nav-links a{position:relative;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);font-weight:500}
+    .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:1px;width:0;background:var(--accent);transition:width .4s cubic-bezier(.2,.7,.2,1)}
+    .nav-links a:hover{color:var(--ink)}
+    .nav-links a:hover::after{width:100%}
+    .nav-cta{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--ink);border:1px solid var(--line-2);padding:11px 20px;transition:border-color .4s ease,color .4s ease,background .4s ease}
+    .nav-cta:hover{border-color:var(--accent);color:var(--accent)}
+
+    /* buttons */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;padding:17px 30px;transition:all .4s cubic-bezier(.2,.7,.2,1)}
+    .btn-solid{background:var(--accent);color:#080404}
+    .btn-solid:hover{background:var(--ink);color:#050505}
+    .btn svg{width:16px;height:16px;flex:none;fill:currentColor}
+    .btn:focus-visible,.nav a:focus-visible{outline:1px solid var(--accent);outline-offset:4px}
+
+    /* video placeholder */
+    .vp{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:var(--frame);border:1px solid var(--line);transition:border-color .5s cubic-bezier(.2,.7,.2,1),background .5s ease,transform .5s cubic-bezier(.2,.7,.2,1)}
+    .vp::before,.vp::after{content:"";position:absolute;width:12px;height:12px;opacity:.5;transition:opacity .5s ease,border-color .5s ease}
+    .vp::before{top:12px;right:12px;border-top:1px solid var(--line-2);border-right:1px solid var(--line-2)}
+    .vp::after{bottom:12px;left:12px;border-bottom:1px solid var(--line-2);border-left:1px solid var(--line-2)}
+    .vp:hover{border-color:rgba(232,80,42,.5);background:#0E0E0E;transform:translateY(-4px)}
+    .vp:hover::before,.vp:hover::after{opacity:1;border-color:var(--accent)}
+    .play{width:0;height:0;border-left:15px solid rgba(237,235,230,.4);border-top:10px solid transparent;border-bottom:10px solid transparent;transition:border-left-color .45s ease,transform .45s cubic-bezier(.2,.7,.2,1)}
+    .vp:hover .play{border-left-color:var(--accent);transform:scale(1.12)}
+    .vp .ix{position:absolute;top:14px;left:14px;font-size:11px;letter-spacing:.16em;color:var(--dim);font-variant-numeric:tabular-nums}
+    .vp .drop{font-size:11px;letter-spacing:.2em;color:var(--dim);text-transform:uppercase;transition:color .45s ease}
+    .vp:hover .drop{color:var(--ink-2)}
+    .vp .bar{position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--line)}
+    .vp .bar span{position:absolute;left:0;top:0;height:1px;width:16%;background:var(--accent);opacity:.55;transition:width .8s cubic-bezier(.2,.7,.2,1),opacity .5s ease}
+    .vp:hover .bar span{width:38%;opacity:1}
+
+    .work{display:flex;flex-direction:column;gap:16px}
+    .work-meta{display:flex;flex-direction:column;gap:6px}
+
+    /* section head */
+    .sec-head{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);gap:72px;align-items:end;padding-bottom:64px;border-bottom:1px solid var(--line);margin-bottom:72px}
+    .sec-title{font-size:44px;line-height:1.1;letter-spacing:-.022em;font-weight:500;max-width:940px}
+    .sec-title .n{color:var(--accent);font-variant-numeric:tabular-nums;font-weight:600}
+    .sec-sub{font-size:15px;line-height:1.7;color:var(--dim);max-width:360px;padding-bottom:6px}
+
+    /* grids */
+    .g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start}
+    .g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;align-items:start}
+    .g2x2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start;max-width:900px}
+
+    /* contact-sheet mosaic (section 02) */
+    .sheet{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+    .sheet .vp{border:0}
+    .sheet .cap{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;background:rgba(5,5,5,.66);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;transform:translateY(6px);transition:opacity .45s ease,transform .45s cubic-bezier(.2,.7,.2,1)}
+    .sheet .vp:hover .cap{opacity:1;transform:none}
+    .sheet .vp:hover{transform:none;background:#101010}
+
+    /* performance band (section 04) */
+    .perf{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .perf-in{padding:168px 0;scroll-margin-top:90px}
+    .sec-cta{border-top:1px solid var(--line);padding:200px 0;scroll-margin-top:90px}
+    .sec-stack{padding-top:136px;padding-bottom:0}
+    .vp--perf{background:#0D0B0B;border-color:rgba(232,80,42,.16)}
+    .vp--perf .mark{position:absolute;top:0;left:0;width:34px;height:2px;background:var(--accent);opacity:.8}
+
+    /* services */
+    .svc{border-top:1px solid var(--line)}
+    .svc-row{position:relative;display:grid;grid-template-columns:88px minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center;padding:30px 0;border-bottom:1px solid var(--line);transition:padding-left .5s cubic-bezier(.2,.7,.2,1)}
+    .svc-row:hover{padding-left:18px}
+    .svc-n{font-size:13px;letter-spacing:.14em;color:var(--dim);font-variant-numeric:tabular-nums;transition:color .4s ease}
+    .svc-row:hover .svc-n{color:var(--accent)}
+    .svc-t{font-size:27px;line-height:1.2;letter-spacing:-.015em;font-weight:400;color:var(--ink-2);transition:color .4s ease}
+    .svc-row:hover .svc-t{color:var(--ink)}
+    .svc-d{font-size:14.5px;line-height:1.6;color:var(--dim);opacity:0;transform:translateX(-10px);transition:opacity .45s ease,transform .5s cubic-bezier(.2,.7,.2,1);max-width:420px;justify-self:end;text-align:right}
+    .svc-row:hover .svc-d{opacity:1;transform:none}
+
+    /* serif accents */
+    .serif{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400}
+
+    /* motion */
+    .hin{animation:hin .95s cubic-bezier(.16,1,.3,1) both}
+    @keyframes hin{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+    .hin-img{animation:hinimg 1.15s cubic-bezier(.16,1,.3,1) both}
+    @keyframes hinimg{from{opacity:0;transform:scale(1.03);clip-path:inset(0 0 14% 0)}to{opacity:1;transform:none;clip-path:inset(0 0 0 0)}}
+    /* scroll reveal — driven via IntersectionObserver in JS for cross-browser support */
+    .js-reveal .rv{opacity:0;transform:translateY(24px);transition:opacity .85s cubic-bezier(.16,1,.3,1),transform .85s cubic-bezier(.16,1,.3,1)}
+    .js-reveal .rv.in-view{opacity:1;transform:none}
+    .dot{width:5px;height:5px;background:var(--accent);border-radius:50%;animation:fall 2.4s cubic-bezier(.5,0,.5,1) infinite}
+    @keyframes fall{0%{transform:translateY(-16px);opacity:0}30%{opacity:1}100%{transform:translateY(22px);opacity:0}}
+
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none !important;transition:none !important}
+      .rv{opacity:1 !important;transform:none !important}
+      .svc-d{opacity:1 !important;transform:none !important}
+      .sheet .cap{opacity:1 !important;transform:none !important}
+      html{scroll-behavior:auto}
+    }
+
+    /* ---------- responsive ---------- */
+    @media (max-width:1180px){
+      .wrap{padding:0 56px}
+      .nav-in{padding:0 56px}
+      .sec{padding:132px 0}
+      .sec-stack{padding:104px 0 0}
+      .perf-in{padding:132px 0}
+      .sec-cta{padding:156px 0}
+      .sec-title{font-size:38px}
+    }
+    @media (max-width:900px){
+      .nav-links{display:none}
+      .sec-head{grid-template-columns:1fr;gap:28px;align-items:start}
+      .sec-sub{max-width:520px}
+      .g4{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .g2x2{grid-template-columns:1fr;max-width:420px;margin:0 auto}
+      .svc-row{grid-template-columns:56px minmax(0,1fr);gap:20px;padding:24px 0}
+      .svc-d{grid-column:1 / -1;opacity:1;transform:none;text-align:left;justify-self:start;padding-left:76px;margin-top:6px}
+    }
+    @media (max-width:720px){
+      .wrap{padding:0 24px}
+      .nav-in{padding:0 24px;height:64px}
+      .sec{padding:96px 0}
+      .sec-stack{padding:72px 0 0}
+      .perf-in{padding:96px 0}
+      .sec-cta{padding:110px 0}
+      .sec-title{font-size:29px}
+      .g3{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+      .g4{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+      .svc-t{font-size:20px}
+    }
+
+    /* ---------- mobile nav (hamburger) ---------- */
+    .menu-toggle-input{display:none}
+    .menu-toggle-btn{display:none;flex-direction:column;justify-content:center;gap:5px;width:28px;height:22px;cursor:pointer;z-index:70}
+    .menu-toggle-btn span{display:block;width:100%;height:1px;background:var(--ink);transition:transform .35s ease,opacity .35s ease}
+    .nav-mobile{display:none;flex-direction:column;padding:8px 24px 28px}
+    .nav-mobile a{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);font-weight:500;padding:14px 0;border-top:1px solid var(--line)}
+    .nav-mobile a:hover{color:var(--accent)}
+
+    @media (max-width:900px){
+      .menu-toggle-btn{display:flex}
+      #menu-toggle:checked ~ .nav-mobile{display:flex}
+      /* o checkbox fica dentro de .nav-in e o painel fora dele: abre via :has() e, como reforço, pela classe .menu-open (JS) */
+      .nav:has(#menu-toggle:checked) .nav-mobile,.nav.menu-open .nav-mobile{display:flex}
+      .nav-mobile{position:absolute;top:100%;left:0;right:0;background:rgba(5,5,5,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+      #menu-toggle:checked ~ .menu-toggle-btn span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+      #menu-toggle:checked ~ .menu-toggle-btn span:nth-child(2){opacity:0}
+      #menu-toggle:checked ~ .menu-toggle-btn span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+    }
+
+    /* ---------- mobile layout fixes ---------- */
+    @media (max-width:900px){
+      .hero-grid{grid-template-columns:1fr !important;gap:56px !important;min-height:0 !important}
+      .hero-grid > div:nth-child(2){order:-1}
+      .hero-h1{font-size:clamp(52px,13vw,92px) !important}
+      .hero-lead{font-size:clamp(28px,7vw,52px) !important}
+      .authority-grid{grid-template-columns:1fr !important}
+      .authority-grid > div{padding:32px 0 !important;border-left:0 !important;border-top:1px solid rgba(237,235,230,.11)}
+      .authority-grid > div:first-child{border-top:0}
+      .authority-num{font-size:clamp(56px,16vw,118px) !important}
+      .sobre-grid{grid-template-columns:1fr !important;gap:48px !important}
+      .sobre-para-grid{grid-template-columns:1fr !important;gap:28px !important}
+      .sobre-h2{font-size:clamp(30px,7vw,50px) !important}
+      .big-quote{font-size:clamp(30px,7.5vw,72px) !important}
+      .cta-h2{font-size:clamp(38px,9vw,82px) !important}
+      .cta-contacts{gap:32px !important}
+      .sheet{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+      .sheet .vp{grid-column:span 1 !important}
+      .sheet .cap{opacity:1 !important;transform:none !important;position:static !important;background:none !important;backdrop-filter:none !important;padding:10px 2px !important}
+      .reel-stagger{margin-top:0 !important}
+      #trabalhos .g3{grid-template-columns:repeat(3,minmax(0,1fr)) !important;gap:10px !important}
+      #trabalhos .g4{grid-template-columns:repeat(4,minmax(0,1fr)) !important;gap:10px !important;margin-top:32px !important}
+      #trabalhos .work-meta .lbl{font-size:8.5px !important;letter-spacing:.14em !important}
+    }
+    /* mobile: "Edições estratégicas" em 2 colunas, legendas de 12px centralizadas */
+    @media (max-width:720px){
+      #trabalhos .g3,#trabalhos .g4{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:24px 14px !important}
+      #trabalhos .g4{margin-top:24px !important}
+      #trabalhos .g3 > .work:last-child:nth-child(odd){grid-column:1 / -1;justify-self:center;width:calc(50% - 7px)}
+      #trabalhos .work-meta{align-items:center;text-align:center}
+      #trabalhos .work-meta .lbl{font-size:12px !important;letter-spacing:.14em !important}
+    }
+    @media (max-width:480px){
+      .hero-h1{font-size:44px !important}
+      .authority-num{font-size:48px !important}
+    }
+  </style>
+</head>
+<body>
+<div id="top">
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav-in">
+      <a href="#top" class="wordmark">VITOR S.</a>
+      <nav class="nav-links">
+        <a href="#recentes">Vídeos recentes</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+      </nav>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+      <label for="menu-toggle" class="menu-toggle-btn" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+    <nav class="nav-mobile">
+      <a href="#recentes">Vídeos recentes</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+    </nav>
+  </header>
+
+  <!-- ============ 01 · HERO ============ -->
+  <section style="position:relative;padding:64px 0 96px">
+    <div class="wrap">
+      <div class="hero-grid" style="display:grid;grid-template-columns:minmax(0,688fr) minmax(0,480fr);gap:96px;align-items:center;min-height:648px">
+
+        <!-- texto -->
+        <div style="display:flex;flex-direction:column;align-items:flex-start">
+          <h1 class="hin hero-h1" style="font-size:92px;line-height:.94;letter-spacing:-.035em;font-weight:600;font-variation-settings:'wdth' 96;color:#FFFFFF;animation-delay:.16s">VITOR S.</h1>
+
+          <div class="lbl hin" style="margin-top:22px;color:#B4B1AA;animation-delay:.24s">Criação de conteúdo e estratégia digital</div>
+
+          <div class="hin" style="width:56px;height:1px;background:#E8502A;margin:34px 0;animation-delay:.3s"></div>
+
+          <p class="hin hero-lead" style="font-size:52px;line-height:1.08;letter-spacing:-.026em;font-weight:400;max-width:660px;text-wrap:pretty;animation-delay:.34s">Conteúdo que não é feito para preencher feed.<br><span class="serif" style="color:#FFFFFF">É feito para gerar resultado.</span></p>
+
+          <p class="hin" style="margin-top:28px;font-size:17px;line-height:1.65;color:#B4B1AA;max-width:470px;animation-delay:.44s">Estratégia, roteiro, edição e criatividade para transformar atenção em crescimento.</p>
+
+          <div class="hin" style="display:flex;gap:14px;margin-top:44px;flex-wrap:wrap;animation-delay:.54s">
+            <a href="#trabalhos" class="btn btn-solid">Ver trabalhos</a>
+          </div>
+        </div>
+
+        <!-- foto -->
+        <div class="hin-img" style="position:relative;animation-delay:.05s">
+          <div style="position:absolute;top:0;left:-38px;height:100%;display:flex;align-items:center">
+            <span class="lbl" style="writing-mode:vertical-rl;transform:rotate(180deg);font-size:10.5px;letter-spacing:.26em">Retrato editorial</span>
+          </div>
+          <div style="position:relative;aspect-ratio:3/4;background:#0C0C0C;border:1px solid rgba(237,235,230,.14);overflow:hidden">
+            <img src="images/hero.jpg" alt="Vitor S." width="638" height="850" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block;filter:contrast(1.05) brightness(1.0)">
+            <div style="position:absolute;top:16px;left:16px;width:16px;height:16px;border-top:1px solid rgba(232,80,42,.9);border-left:1px solid rgba(232,80,42,.9)"></div>
+            <div style="position:absolute;bottom:16px;right:16px;width:16px;height:16px;border-bottom:1px solid rgba(232,80,42,.9);border-right:1px solid rgba(232,80,42,.9)"></div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:14px">
+            <span class="lbl" style="font-size:10.5px">Vitor S. — retrato</span>
+            <span class="lbl" style="font-size:10.5px;color:#E8502A">01</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- indicador de scroll -->
+    <div class="wrap" style="margin-top:34px">
+      <div style="display:flex;align-items:center;gap:16px">
+        <div style="position:relative;width:5px;height:26px;display:flex;align-items:flex-start;justify-content:center"><span class="dot"></span></div>
+        <span class="lbl" style="font-size:10.5px">Role para ver os trabalhos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 · FAIXA DE AUTORIDADE ============ -->
+  <section style="border-top:1px solid rgba(237,235,230,.11);border-bottom:1px solid rgba(237,235,230,.11);background:#070707">
+    <div class="wrap">
+      <div class="authority-grid" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;padding:88px 0">
+
+        <div class="rv" style="padding-right:56px">
+          <div style="display:flex;align-items:baseline;gap:14px">
+            <span class="authority-num" style="font-size:118px;line-height:.82;letter-spacing:-.05em;font-weight:600;font-variation-settings:'wdth' 78;color:#EDEBE6">07</span>
+            <span class="lbl" style="font-size:13px;color:#B4B1AA">Anos</span>
+          </div>
+          <p style="margin-top:26px;font-size:14.5px;line-height:1.65;color:#8E8B84;max-width:280px">Criando conteúdo e estratégias para produtos digitais e físicos.</p>
+        </div>
+
+        <div class="rv" style="padding:0 56px;border-left:1px solid rgba(237,235,230,.11)">
+          <div style="display:flex;align-items:baseline;gap:14px">
+            <span class="authority-num" style="font-size:118px;line-height:.82;letter-spacing:-.05em;font-weight:600;font-variation-settings:'wdth' 78;color:#EDEBE6">+1000</span>
+            <span class="lbl" style="font-size:13px;color:#B4B1AA">Reels</span>
+          </div>
+          <p style="margin-top:26px;font-size:14.5px;line-height:1.65;color:#8E8B84;max-width:280px">Reels editados e produzidos estrategicamente.</p>
+        </div>
+
+        <div class="rv" style="padding-left:56px;border-left:1px solid rgba(237,235,230,.11)">
+          <div style="display:flex;align-items:baseline;gap:14px">
+            <span class="authority-num" style="font-size:118px;line-height:.82;letter-spacing:-.05em;font-weight:600;font-variation-settings:'wdth' 78;color:#EDEBE6">+200</span>
+            <span class="lbl" style="font-size:13px;color:#B4B1AA">Vídeos</span>
+          </div>
+          <p style="margin-top:26px;font-size:14.5px;line-height:1.65;color:#8E8B84;max-width:280px">Vídeos para YouTube editados e produzidos.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 · VÍDEOS MAIS RECENTES ============ -->
+  <section class="sec" id="recentes" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title"><span class="n">01</span> — Vídeos mais recentes</h2>
+        <p class="sec-sub">Os trabalhos mais novos do portfólio.</p>
+      </div>
+
+      <div class="g2x2">
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/video-recente-01.mp4" data-poster="images/capa-recente-01.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Edição + Roteiro · Reels</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/video-recente-02.mp4" data-poster="images/capa-recente-02.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Edição + Roteiro · Reels</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03C · CASE JORNAL RAZÃO ============ -->
+  <section class="sec sec-stack" id="case-jornal-razao">
+    <div class="wrap">
+      <div class="rv" style="margin-bottom:56px">
+        <h2 class="sec-title"><span class="n">02</span> — Case Jornal Razão</h2>
+        <p class="lbl" style="font-size:11.5px;margin-top:18px">Produção e edição de vídeos para um jornal com mais de 1,9 milhão de seguidores</p>
+      </div>
+
+      <div class="g2x2">
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/jornal-razao-01.mp4" data-poster="images/poster-jornal-razao-01.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Case Jornal Razão</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/jornal-razao-02.mp4" data-poster="images/poster-jornal-razao-02.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Case Jornal Razão</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/jornal-razao-03.mp4" data-poster="images/poster-jornal-razao-03.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Case Jornal Razão</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/jornal-razao-04.mp4" data-poster="images/poster-jornal-razao-04.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Case Jornal Razão</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03A · ANTES E DEPOIS ============ -->
+  <section class="sec sec-stack" id="antes-depois">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title"><span class="n">03</span> — Antes e depois</h2>
+        <p class="sec-sub">Veja a diferença que uma edição profissional faz:</p>
+      </div>
+
+      <div class="rv" style="position:relative;aspect-ratio:16/9;background:#0C0C0C;border:1px solid rgba(237,235,230,.14);overflow:hidden">
+        <iframe loading="lazy" src="https://www.youtube.com/embed/NTO11aa9bGg?modestbranding=1&rel=0&iv_load_policy=3&showinfo=0" title="Antes e depois" style="width:100%;height:100%;position:absolute;top:0;left:0;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03B · EDIÇÕES PARA YOUTUBE ============ -->
+  <section class="sec sec-stack" id="destaque">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title"><span class="n">04</span> — Edições para YouTube</h2>
+        <p class="sec-sub">Edições para canais e marcas.</p>
+      </div>
+
+      <div class="rv" style="margin-top:0">
+        <p class="lbl" style="font-size:12.5px;color:#B4B1AA;margin-bottom:18px">Edição para a Opera GX — Navegador Gamer</p>
+        <div style="position:relative;aspect-ratio:16/9;background:#0C0C0C;border:1px solid rgba(237,235,230,.14);overflow:hidden">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/GrGT0eIZW5I?modestbranding=1&rel=0&iv_load_policy=3&showinfo=0" title="Edição para a Opera GX — Navegador Gamer" style="width:100%;height:100%;position:absolute;top:0;left:0;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="rv" style="margin-top:64px">
+        <p class="lbl" style="font-size:12.5px;color:#B4B1AA;margin-bottom:18px">Vídeo publicitário para a Pixel Porto — canal com +287 mil inscritos</p>
+        <div style="position:relative;aspect-ratio:16/9;background:#0C0C0C;border:1px solid rgba(237,235,230,.14);overflow:hidden">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/76tPPc7zJoM?modestbranding=1&rel=0&iv_load_policy=3&showinfo=0" title="Vídeo publicitário para a Pixel Porto" style="width:100%;height:100%;position:absolute;top:0;left:0;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="rv" style="margin-top:64px">
+        <p class="lbl" style="font-size:12.5px;color:#B4B1AA;margin-bottom:18px">Edição Comercial — EclipseBuxx</p>
+        <div style="position:relative;aspect-ratio:16/9;background:#0C0C0C;border:1px solid rgba(237,235,230,.14);overflow:hidden">
+          <iframe loading="lazy" src="https://www.youtube.com/embed/mmF5vf_hMOw?modestbranding=1&rel=0&iv_load_policy=3&showinfo=0" title="Edição Comercial — EclipseBuxx" style="width:100%;height:100%;position:absolute;top:0;left:0;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 · CASE UGO VIAGENS ============ -->
+  <section class="sec" id="case-ugo" style="padding-top:0">
+    <div class="wrap">
+      <div style="border-top:1px solid var(--line);margin-bottom:56px"></div>
+
+      <div class="rv" style="margin-bottom:56px">
+        <h2 class="sec-title"><span class="n">05</span> — Case uGoo Viagens</h2>
+        <p class="lbl" style="font-size:11.5px;margin-top:18px">Edição • Retenção • Motion Design • Direção Visual</p>
+      </div>
+
+      <div class="g2x2">
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/ugo-viagens-01.mp4" data-poster="images/poster-ugo-01.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Case Ugo Viagens</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/ugo-viagens-02.mp4" data-poster="images/poster-ugo-02.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Case Ugo Viagens</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/ugo-viagens-03.mp4" data-poster="images/poster-ugo-03.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Case Ugo Viagens</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/ugo-viagens-04.mp4" data-poster="images/poster-ugo-04.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Case Ugo Viagens</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/ugo-viagens-05.mp4" data-poster="images/poster-ugo-05.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Case Ugo Viagens</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 · PORTFÓLIO PRINCIPAL ============ -->
+  <section class="sec" id="trabalhos">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title"><span class="n">06</span> — Edições estratégicas para retenção e conversão</h2>
+        <p class="sec-sub">Conteúdo pensado para atrair, converter e reter — não só viralizar.</p>
+      </div>
+
+      <!-- linha A: 3 destaques -->
+      <div class="g3">
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/reel-01.mp4" data-poster="images/poster-reel-01.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Edição + Roteiro · Reels</span></div>
+        </article>
+
+        <article class="work rv reel-stagger" style="margin-top:56px">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/reel-02.mp4" data-poster="images/poster-reel-02.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Edição + Roteiro · Reels</span></div>
+        </article>
+
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/reel-03.mp4" data-poster="images/poster-reel-03.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Edição + Roteiro · Reels</span></div>
+        </article>
+      </div>
+
+      <!-- linha B: 4 -->
+      <div class="g4" style="margin-top:96px">
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/reel-04.mp4" data-poster="images/poster-reel-04.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Edição + Roteiro</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/reel-05.mp4" data-poster="images/poster-reel-05.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Edição + Roteiro</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/reel-06.mp4" data-poster="images/poster-reel-06.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Edição + Roteiro</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp" style="aspect-ratio:9/16">
+            <video src="videos/reel-07.mp4" data-poster="images/poster-reel-07.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video>
+          </div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Edição + Roteiro</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 · CRIATIVOS DE PERFORMANCE ============ -->
+  <section class="perf">
+    <div class="wrap perf-in">
+      <div class="sec-head">
+        <h2 class="sec-title"><span class="n">07</span> — Criativos estratégicos para campanhas de alta conversão</h2>
+        <p class="sec-sub">Criativos desenvolvidos para disputar atenção, comunicar valor e gerar ação.</p>
+      </div>
+
+      <div class="g4">
+        <article class="work rv">
+          <div class="vp vp--perf" style="aspect-ratio:9/16"><video src="videos/criativo-01.mp4" data-poster="images/poster-criativo-01.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video></div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Criativo · Performance</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp vp--perf" style="aspect-ratio:9/16"><video src="videos/criativo-02.mp4" data-poster="images/poster-criativo-02.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video></div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Criativo · Performance</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp vp--perf" style="aspect-ratio:9/16"><video src="videos/criativo-03.mp4" data-poster="images/poster-criativo-03.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video></div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Criativo · Performance</span></div>
+        </article>
+        <article class="work rv">
+          <div class="vp vp--perf" style="aspect-ratio:9/16"><video src="videos/criativo-04.mp4" data-poster="images/poster-criativo-04.jpg" controls loop playsinline preload="none" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"></video></div>
+          <div class="work-meta"><span class="lbl" style="font-size:10.5px">Criativo · Performance</span></div>
+        </article>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ============ 07 · SOBRE ============ -->
+  <section class="sec" id="sobre">
+    <div class="wrap">
+      <div class="sobre-grid" style="display:grid;grid-template-columns:minmax(0,.42fr) minmax(0,1fr);gap:96px;align-items:start">
+
+        <div class="rv">
+          <span class="lbl">Sobre</span>
+          <div style="margin-top:28px;position:relative;aspect-ratio:4/5;background:#0C0C0C;border:1px solid rgba(237,235,230,.11);overflow:hidden">
+            <img src="images/sobre.jpg" srcset="images/sobre-800.jpg 800w, images/sobre.jpg 1600w" sizes="(max-width:900px) calc(100vw - 48px), 30vw" alt="Vitor S." width="1600" height="2134" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+        </div>
+
+        <div class="rv">
+          <div class="sobre-para-grid" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;max-width:820px">
+            <p style="font-size:16.5px;line-height:1.75;color:#B4B1AA">Meu trabalho é pensado com estratégia e propósito. Sou estrategista digital com 7 anos de experiência, especializado em conteúdo, tráfego pago e crescimento de marcas no Instagram.</p>
+            <p style="font-size:16.5px;line-height:1.75;color:#B4B1AA">Não trabalho apenas para criar conteúdo bonito. Trabalho para entender o que faz uma pessoa parar, assistir, clicar, comprar ou continuar acompanhando uma marca.</p>
+          </div>
+
+          <p style="margin-top:44px;font-size:16.5px;line-height:1.75;color:#8E8B84;max-width:680px">Em alguns casos, a melhor decisão é testar uma abordagem diferente do padrão estético para entender o que realmente gera resultado.</p>
+        </div>
+
+      </div>
+
+      <div class="rv" style="margin-top:140px;padding-top:72px;border-top:1px solid rgba(237,235,230,.11)">
+        <p class="big-quote" style="font-size:60px;line-height:1.12;letter-spacing:-.03em;font-weight:400;max-width:1120px;text-wrap:pretty">No fim, não é a estética que define um bom conteúdo. <span class="serif" style="color:#FFFFFF">É a resposta de quem está do outro lado.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 08 · SERVIÇOS ============ -->
+  <section class="sec" id="servicos" style="border-top:1px solid rgba(237,235,230,.11);background:#070707">
+    <div class="wrap">
+      <div class="sec-head" style="border-bottom:0;margin-bottom:56px;padding-bottom:40px">
+        <h2 class="sec-title" style="font-size:52px">O que eu faço</h2>
+        <p class="sec-sub">Estratégia antes da execução. Criatividade com propósito.</p>
+      </div>
+
+      <div class="svc">
+        <div class="svc-row"><span class="svc-n">01</span><span class="svc-t">Estratégia de conteúdo e posicionamento</span><span class="svc-d">Definição de território, tom e pauta: o que a marca fala, para quem e por quê.</span></div>
+        <div class="svc-row"><span class="svc-n">02</span><span class="svc-t">Roteiros, copywriting e hooks</span><span class="svc-d">Os primeiros três segundos pensados para segurar. O resto, para levar até o fim.</span></div>
+        <div class="svc-row"><span class="svc-n">03</span><span class="svc-t">Edição de vídeos para Reels, Shorts e YouTube</span><span class="svc-d">Ritmo, corte e som a serviço da mensagem — não do efeito.</span></div>
+        <div class="svc-row"><span class="svc-n">04</span><span class="svc-t">Planejamento e calendário editorial</span><span class="svc-d">Frequência sustentável, com pauta encadeada em vez de posts soltos.</span></div>
+        <div class="svc-row"><span class="svc-n">05</span><span class="svc-t">Estratégia de conteúdo para vendas e e-commerce</span><span class="svc-d">Conteúdo que apresenta o produto, quebra objeção e encurta a decisão.</span></div>
+        <div class="svc-row"><span class="svc-n">06</span><span class="svc-t">Gestão de tráfego pago e Meta Ads</span><span class="svc-d">Estrutura de campanha, criativo e leitura de dados no mesmo lugar.</span></div>
+        <div class="svc-row"><span class="svc-n">07</span><span class="svc-t">Estratégia de vendas pelo WhatsApp</span><span class="svc-d">Do clique à conversa: abordagem, resposta e fechamento.</span></div>
+        <div class="svc-row"><span class="svc-n">08</span><span class="svc-t">Análise de métricas e desempenho</span><span class="svc-d">Retenção, salvamentos e conversão lidos como decisão, não como relatório.</span></div>
+        <div class="svc-row"><span class="svc-n">09</span><span class="svc-t">Auditoria e otimização de perfil</span><span class="svc-d">Bio, destaques, grade e primeira impressão revisados linha a linha.</span></div>
+        <div class="svc-row"><span class="svc-n">10</span><span class="svc-t">Consultoria de crescimento no Instagram</span><span class="svc-d">Acompanhamento próximo para tirar a operação de conteúdo do improviso.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 11 · CTA FINAL ============ -->
+  <section id="contato" class="sec-cta">
+    <div class="wrap">
+      <div class="rv" style="max-width:1060px">
+        <span class="lbl lbl-acc" style="font-size:11px">Contato</span>
+        <h2 class="cta-h2" style="margin-top:40px;font-size:82px;line-height:1.02;letter-spacing:-.038em;font-weight:400;text-wrap:pretty">Vamos conversar sobre <span class="serif" style="color:#FFFFFF">seu projeto?</span></h2>
+        <p style="margin-top:36px;font-size:18px;line-height:1.65;color:#B4B1AA;max-width:520px">Se você procura alguém para pensar conteúdo além do feed, vamos conversar.</p>
+
+        <div style="display:flex;gap:14px;margin-top:44px;flex-wrap:wrap">
+          <a href="https://wa.me/5587991802625?text=Ol%C3%A1%2C%20Vitor%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20seus%20servi%C3%A7os." target="_blank" rel="noopener" class="btn btn-solid" aria-label="Conversar com Vitor no WhatsApp (abre em nova aba)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>Conversar no WhatsApp</a>
+        </div>
+
+        <div class="cta-contacts" style="display:flex;gap:56px;margin-top:88px;flex-wrap:wrap;padding-top:36px;border-top:1px solid rgba(237,235,230,.11)">
+          <div class="work-meta"><span class="lbl" style="font-size:10px">Instagram</span><a href="https://instagram.com/vitooretc" target="_blank" rel="noopener" style="font-size:20px">@vitooretc</a></div>
+          <div class="work-meta"><span class="lbl" style="font-size:10px">E-mail</span><a href="mailto:vitoretcpro@hotmail.com" style="font-size:20px">vitoretcpro@hotmail.com</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="border-top:1px solid rgba(237,235,230,.11);padding:56px 0 44px">
+    <div class="wrap">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap">
+        <div class="work-meta">
+          <span style="font-size:15px;letter-spacing:.12em;font-weight:600">VITOR S.</span>
+          <span class="lbl" style="font-size:10.5px">Content Creator &amp; Estrategista Digital</span>
+        </div>
+        <div style="display:flex;gap:32px">
+          <a href="https://instagram.com/vitooretc" target="_blank" rel="noopener" class="lbl" style="font-size:10.5px;color:#B4B1AA">Instagram</a>
+          <a href="mailto:vitoretcpro@hotmail.com" class="lbl" style="font-size:10.5px;color:#B4B1AA">E-mail</a>
+        </div>
+      </div>
+      <div style="margin-top:56px;padding-top:22px;border-top:1px solid rgba(237,235,230,.11)">
+        <span class="lbl" style="font-size:10px">© 2026 Vitor S. — Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  if (!('IntersectionObserver' in window)) {
+    document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('in-view'); });
+    return;
+  }
+  function indexWithinSiblings(el){
+    var parent = el.parentElement;
+    var siblings = Array.prototype.filter.call(parent.children, function(c){ return c.classList.contains('rv'); });
+    return siblings.indexOf(el);
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting) {
+        var el = entry.target;
+        var i = indexWithinSiblings(el);
+        var delay = Math.min(i, 4) * 90;
+        setTimeout(function(){ el.classList.add('in-view'); }, delay);
+        io.unobserve(el);
+      }
+    });
+  }, { threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+})();
+
+/* vídeos: capa e metadados carregados só quando o vídeo se aproxima da tela */
+(function(){
+  var vids = document.querySelectorAll('video[data-poster]');
+  function prime(v){
+    if (v.getAttribute('data-primed')) return;
+    v.setAttribute('data-primed','1');
+    v.poster = v.getAttribute('data-poster');
+    v.preload = 'metadata';
+  }
+  if ('IntersectionObserver' in window) {
+    var vo = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { prime(e.target); vo.unobserve(e.target); } });
+    }, { rootMargin: '800px 0px' });
+    vids.forEach(function(v){ vo.observe(v); });
+  } else {
+    vids.forEach(prime);
+  }
+  /* um vídeo por vez: ao dar play, pausa os demais */
+  document.addEventListener('play', function(e){
+    var t = e.target;
+    if (!t || t.tagName !== 'VIDEO') return;
+    prime(t);
+    document.querySelectorAll('video').forEach(function(o){ if (o !== t && !o.paused) o.pause(); });
+  }, true);
+})();
+
+/* menu mobile: fecha ao escolher uma seção */
+(function(){
+  var toggle = document.getElementById('menu-toggle');
+  var nav = document.querySelector('.nav');
+  if (!toggle || !nav) return;
+  function sync(){ nav.classList.toggle('menu-open', toggle.checked); }
+  function close(){ toggle.checked = false; sync(); }
+  toggle.addEventListener('change', sync);
+  document.querySelectorAll('.nav-mobile a').forEach(function(a){ a.addEventListener('click', close); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+})();
+</script>
+
+</body>
+</html>
